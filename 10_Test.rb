@@ -81,3 +81,5 @@ puts judge(21)
 reverse_proc = Proc.new{|s| s.reverse}
 p ['ruby','java','c++'].map(&reverse_proc)
 
+puts "testdayooooo"
+

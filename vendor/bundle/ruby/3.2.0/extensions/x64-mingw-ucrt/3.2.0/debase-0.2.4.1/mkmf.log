@@ -1,0 +1,273 @@
+have_header: checking for vm_core.h... -------------------- no
+
+PATH=".;E:/ProgramFiles/Ruby32-x64/lib;E:\ProgramFiles\Ruby32-x64\bin;E:\ProgramFiles\Ruby32-x64\msys64\ucrt64\bin;E:\ProgramFiles\Ruby32-x64\msys64\usr\bin;E:\ProgramFiles\Ruby32-x64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;E:\ProgramFiles\Git\cmd;C:\Users\k_ast\AppData\Local\Microsoft\WindowsApps;;D:\Programs\Microsoft VS Code\bin;C:\Users\k_ast\.dotnet\tools" "gcc -o conftest.exe -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/ruby/backward -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LE:/ProgramFiles/Ruby32-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby320  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;E:/ProgramFiles/Ruby32-x64/lib;E:\ProgramFiles\Ruby32-x64\bin;E:\ProgramFiles\Ruby32-x64\msys64\ucrt64\bin;E:\ProgramFiles\Ruby32-x64\msys64\usr\bin;E:\ProgramFiles\Ruby32-x64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;E:\ProgramFiles\Git\cmd;C:\Users\k_ast\AppData\Local\Microsoft\WindowsApps;;D:\Programs\Microsoft VS Code\bin;C:\Users\k_ast\.dotnet\tools" "gcc -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/ruby/backward -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: vm_core.h: No such file or directory
+    5 | #include <vm_core.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <vm_core.h>
+/* end */
+
+--------------------
+
+have_header: checking for vm_core.h... -------------------- no
+
+PATH=".;E:/ProgramFiles/Ruby32-x64/lib;E:\ProgramFiles\Ruby32-x64\bin;E:\ProgramFiles\Ruby32-x64\msys64\ucrt64\bin;E:\ProgramFiles\Ruby32-x64\msys64\usr\bin;E:\ProgramFiles\Ruby32-x64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;E:\ProgramFiles\Git\cmd;C:\Users\k_ast\AppData\Local\Microsoft\WindowsApps;;D:\Programs\Microsoft VS Code\bin;C:\Users\k_ast\.dotnet\tools" "gcc -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/ruby/backward -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0 -I. -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/ruby-3.2.0-p0 -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+conftest.c:5:10: fatal error: vm_core.h: No such file or directory
+    5 | #include <vm_core.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <vm_core.h>
+/* end */
+
+--------------------
+
+have_header: checking for vm_core.h... -------------------- yes
+
+PATH=".;E:/ProgramFiles/Ruby32-x64/lib;E:\ProgramFiles\Ruby32-x64\bin;E:\ProgramFiles\Ruby32-x64\msys64\ucrt64\bin;E:\ProgramFiles\Ruby32-x64\msys64\usr\bin;E:\ProgramFiles\Ruby32-x64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;E:\ProgramFiles\Git\cmd;C:\Users\k_ast\AppData\Local\Microsoft\WindowsApps;;D:\Programs\Microsoft VS Code\bin;C:\Users\k_ast\.dotnet\tools" "gcc -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/ruby/backward -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0 -I. -IC:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0 -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <vm_core.h>
+/* end */
+
+--------------------
+
+have_header: checking for iseq.h... -------------------- yes
+
+PATH=".;E:/ProgramFiles/Ruby32-x64/lib;E:\ProgramFiles\Ruby32-x64\bin;E:\ProgramFiles\Ruby32-x64\msys64\ucrt64\bin;E:\ProgramFiles\Ruby32-x64\msys64\usr\bin;E:\ProgramFiles\Ruby32-x64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;E:\ProgramFiles\Git\cmd;C:\Users\k_ast\AppData\Local\Microsoft\WindowsApps;;D:\Programs\Microsoft VS Code\bin;C:\Users\k_ast\.dotnet\tools" "gcc -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/ruby/backward -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0 -I. -IC:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0 -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+In file included from C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/method.h:15,
+                 from C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_core.h:97,
+                 from C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/iseq.h:14,
+                 from conftest.c:5:
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/internal/imemo.h: In function 'MEMO_V1_SET':
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/internal/imemo.h:233:5: warning: implicit declaration of function 'RB_OBJ_WRITE'; did you mean 'RB_OBJ_WRITTEN'? [-Wimplicit-function-declaration]
+  233 |     RB_OBJ_WRITE(m, &m->v1, v);
+      |     ^~~~~~~~~~~~
+      |     RB_OBJ_WRITTEN
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <iseq.h>
+/* end */
+
+--------------------
+
+have_header: checking for version.h... -------------------- yes
+
+PATH=".;E:/ProgramFiles/Ruby32-x64/lib;E:\ProgramFiles\Ruby32-x64\bin;E:\ProgramFiles\Ruby32-x64\msys64\ucrt64\bin;E:\ProgramFiles\Ruby32-x64\msys64\usr\bin;E:\ProgramFiles\Ruby32-x64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;E:\ProgramFiles\Git\cmd;C:\Users\k_ast\AppData\Local\Microsoft\WindowsApps;;D:\Programs\Microsoft VS Code\bin;C:\Users\k_ast\.dotnet\tools" "gcc -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/ruby/backward -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0 -I. -IC:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0 -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <version.h>
+/* end */
+
+--------------------
+
+have_header: checking for vm_core.h... -------------------- yes
+
+PATH=".;E:/ProgramFiles/Ruby32-x64/lib;E:\ProgramFiles\Ruby32-x64\bin;E:\ProgramFiles\Ruby32-x64\msys64\ucrt64\bin;E:\ProgramFiles\Ruby32-x64\msys64\usr\bin;E:\ProgramFiles\Ruby32-x64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;E:\ProgramFiles\Git\cmd;C:\Users\k_ast\AppData\Local\Microsoft\WindowsApps;;D:\Programs\Microsoft VS Code\bin;C:\Users\k_ast\.dotnet\tools" "gcc -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/ruby/backward -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0 -I. -IC:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0 -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <vm_core.h>
+/* end */
+
+--------------------
+
+have_header: checking for vm_insnhelper.h... -------------------- no
+
+PATH=".;E:/ProgramFiles/Ruby32-x64/lib;E:\ProgramFiles\Ruby32-x64\bin;E:\ProgramFiles\Ruby32-x64\msys64\ucrt64\bin;E:\ProgramFiles\Ruby32-x64\msys64\usr\bin;E:\ProgramFiles\Ruby32-x64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;E:\ProgramFiles\Git\cmd;C:\Users\k_ast\AppData\Local\Microsoft\WindowsApps;;D:\Programs\Microsoft VS Code\bin;C:\Users\k_ast\.dotnet\tools" "gcc -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0/ruby/backward -IE:/ProgramFiles/Ruby32-x64/include/ruby-3.2.0 -I. -IC:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0 -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+In file included from conftest.c:5:
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:17:13: error: unknown type name 'rb_serial_t'
+   17 | RUBY_EXTERN rb_serial_t ruby_vm_constant_cache_invalidations;
+      |             ^~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:18:13: error: unknown type name 'rb_serial_t'
+   18 | RUBY_EXTERN rb_serial_t ruby_vm_constant_cache_misses;
+      |             ^~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:19:13: error: unknown type name 'rb_serial_t'
+   19 | RUBY_EXTERN rb_serial_t ruby_vm_global_cvar_state;
+      |             ^~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:128:48: error: unknown type name 'vm_call_handler'; did you mean '_purecall_handler'?
+  128 | CC_SET_FASTPATH(const struct rb_callcache *cc, vm_call_handler func, bool enabled)
+      |                                                ^~~~~~~~~~~~~~~
+      |                                                _purecall_handler
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:188:33: error: unknown type name 'rb_control_frame_t'
+  188 | THROW_DATA_NEW(VALUE val, const rb_control_frame_t *cf, int st)
+      |                                 ^~~~~~~~~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: In function 'THROW_DATA_NEW':
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:190:57: warning: implicit declaration of function 'rb_imemo_new'; did you mean 'rb_time_new'? [-Wimplicit-function-declaration]
+  190 |     struct vm_throw_data *obj = (struct vm_throw_data *)rb_imemo_new(imemo_throw_data, val, (VALUE)cf, 0, 0);
+      |                                                         ^~~~~~~~~~~~
+      |                                                         rb_time_new
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:190:70: error: 'imemo_throw_data' undeclared (first use in this function); did you mean 'vm_throw_data'?
+  190 |     struct vm_throw_data *obj = (struct vm_throw_data *)rb_imemo_new(imemo_throw_data, val, (VALUE)cf, 0, 0);
+      |                                                                      ^~~~~~~~~~~~~~~~
+      |                                                                      vm_throw_data
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:190:70: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:191:8: error: invalid use of undefined type 'struct vm_throw_data'
+  191 |     obj->throw_state = st;
+      |        ^~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: In function 'THROW_DATA_VAL':
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:198:5: warning: implicit declaration of function 'VM_ASSERT'; did you mean 'C_ASSERT'? [-Wimplicit-function-declaration]
+  198 |     VM_ASSERT(THROW_DATA_P(obj));
+      |     ^~~~~~~~~
+      |     C_ASSERT
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:198:15: warning: implicit declaration of function 'THROW_DATA_P'; did you mean 'THROW_DATA_VAL'? [-Wimplicit-function-declaration]
+  198 |     VM_ASSERT(THROW_DATA_P(obj));
+      |               ^~~~~~~~~~~~
+      |               THROW_DATA_VAL
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:199:15: error: invalid use of undefined type 'const struct vm_throw_data'
+  199 |     return obj->throw_obj;
+      |               ^~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: At top level:
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:202:21: error: unknown type name 'rb_control_frame_t'
+  202 | static inline const rb_control_frame_t *
+      |                     ^~~~~~~~~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: In function 'THROW_DATA_CATCH_FRAME':
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:206:15: error: invalid use of undefined type 'const struct vm_throw_data'
+  206 |     return obj->catch_frame;
+      |               ^~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: In function 'THROW_DATA_STATE':
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:213:15: error: invalid use of undefined type 'const struct vm_throw_data'
+  213 |     return obj->throw_state;
+      |               ^~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: In function 'THROW_DATA_CONSUMED_P':
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:220:15: error: invalid use of undefined type 'const struct vm_throw_data'
+  220 |     return obj->flags & THROW_DATA_CONSUMED;
+      |               ^~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:220:25: error: 'THROW_DATA_CONSUMED' undeclared (first use in this function); did you mean 'THROW_DATA_CONSUMED_P'?
+  220 |     return obj->flags & THROW_DATA_CONSUMED;
+      |                         ^~~~~~~~~~~~~~~~~~~
+      |                         THROW_DATA_CONSUMED_P
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: At top level:
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:224:61: error: unknown type name 'rb_control_frame_t'
+  224 | THROW_DATA_CATCH_FRAME_SET(struct vm_throw_data *obj, const rb_control_frame_t *cfp)
+      |                                                             ^~~~~~~~~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: In function 'THROW_DATA_CATCH_FRAME_SET':
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:227:8: error: invalid use of undefined type 'struct vm_throw_data'
+  227 |     obj->catch_frame = cfp;
+      |        ^~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: In function 'THROW_DATA_STATE_SET':
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:234:8: error: invalid use of undefined type 'struct vm_throw_data'
+  234 |     obj->throw_state = st;
+      |        ^~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: In function 'THROW_DATA_CONSUMED_SET':
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:241:34: error: 'TAG_BREAK' undeclared (first use in this function); did you mean 'EV_BREAK'?
+  241 |         THROW_DATA_STATE(obj) == TAG_BREAK) {
+      |                                  ^~~~~~~~~
+      |                                  EV_BREAK
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:242:12: error: invalid use of undefined type 'struct vm_throw_data'
+  242 |         obj->flags |= THROW_DATA_CONSUMED;
+      |            ^~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:242:23: error: 'THROW_DATA_CONSUMED' undeclared (first use in this function); did you mean 'THROW_DATA_CONSUMED_P'?
+  242 |         obj->flags |= THROW_DATA_CONSUMED;
+      |                       ^~~~~~~~~~~~~~~~~~~
+      |                       THROW_DATA_CONSUMED_P
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: At top level:
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:253:62: warning: 'struct rb_callcache' declared inside parameter list will not be visible outside of this definition or declaration
+  253 | vm_call_cacheable(const struct rb_callinfo *ci, const struct rb_callcache *cc)
+      |                                                              ^~~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:253:32: warning: 'struct rb_callinfo' declared inside parameter list will not be visible outside of this definition or declaration
+  253 | vm_call_cacheable(const struct rb_callinfo *ci, const struct rb_callcache *cc)
+      |                                ^~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: In function 'vm_call_cacheable':
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:255:13: warning: implicit declaration of function 'vm_ci_flag' [-Wimplicit-function-declaration]
+  255 |     return (vm_ci_flag(ci) & VM_CALL_FCALL) ||
+      |             ^~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:255:30: error: 'VM_CALL_FCALL' undeclared (first use in this function)
+  255 |     return (vm_ci_flag(ci) & VM_CALL_FCALL) ||
+      |                              ^~~~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:256:9: warning: implicit declaration of function 'METHOD_ENTRY_VISI' [-Wimplicit-function-declaration]
+  256 |         METHOD_ENTRY_VISI(vm_cc_cme(cc)) != METHOD_VISI_PROTECTED;
+      |         ^~~~~~~~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:256:27: warning: implicit declaration of function 'vm_cc_cme' [-Wimplicit-function-declaration]
+  256 |         METHOD_ENTRY_VISI(vm_cc_cme(cc)) != METHOD_VISI_PROTECTED;
+      |                           ^~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:256:45: error: 'METHOD_VISI_PROTECTED' undeclared (first use in this function)
+  256 |         METHOD_ENTRY_VISI(vm_cc_cme(cc)) != METHOD_VISI_PROTECTED;
+      |                                             ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: At top level:
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:261:71: warning: 'struct rb_callcache' declared inside parameter list will not be visible outside of this definition or declaration
+  261 | vm_call_iseq_optimizable_p(const struct rb_callinfo *ci, const struct rb_callcache *cc)
+      |                                                                       ^~~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:261:41: warning: 'struct rb_callinfo' declared inside parameter list will not be visible outside of this definition or declaration
+  261 | vm_call_iseq_optimizable_p(const struct rb_callinfo *ci, const struct rb_callcache *cc)
+      |                                         ^~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h: In function 'vm_call_iseq_optimizable_p':
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:246:54: error: 'VM_CALL_ARGS_SPLAT' undeclared (first use in this function)
+  246 | #define IS_ARGS_SPLAT(ci)          (vm_ci_flag(ci) & VM_CALL_ARGS_SPLAT)
+      |                                                      ^~~~~~~~~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:246:54: note: in definition of macro 'IS_ARGS_SPLAT'
+  246 | #define IS_ARGS_SPLAT(ci)          (vm_ci_flag(ci) & VM_CALL_ARGS_SPLAT)
+      |                                                      ^~~~~~~~~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:247:54: error: 'VM_CALL_KWARG' undeclared (first use in this function)
+  247 | #define IS_ARGS_KEYWORD(ci)        (vm_ci_flag(ci) & VM_CALL_KWARG)
+      |                                                      ^~~~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:247:54: note: in definition of macro 'IS_ARGS_KEYWORD'
+  247 | #define IS_ARGS_KEYWORD(ci)        (vm_ci_flag(ci) & VM_CALL_KWARG)
+      |                                                      ^~~~~~~~~~~~~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:263:76: warning: passing argument 1 of 'vm_call_cacheable' from incompatible pointer type [-Wincompatible-pointer-types]
+  263 |     return !IS_ARGS_SPLAT(ci) && !IS_ARGS_KEYWORD(ci) && vm_call_cacheable(ci, cc);
+      |                                                                            ^~
+      |                                                                            |
+      |                                                                            const struct rb_callinfo *
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:253:45: note: expected 'const struct rb_callinfo *' but argument is of type 'const struct rb_callinfo *'
+  253 | vm_call_cacheable(const struct rb_callinfo *ci, const struct rb_callcache *cc)
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:263:80: warning: passing argument 2 of 'vm_call_cacheable' from incompatible pointer type [-Wincompatible-pointer-types]
+  263 |     return !IS_ARGS_SPLAT(ci) && !IS_ARGS_KEYWORD(ci) && vm_call_cacheable(ci, cc);
+      |                                                                                ^~
+      |                                                                                |
+      |                                                                                const struct rb_callcache *
+C:/Users/k_ast/.local/share/gem/ruby/3.2.0/gems/debase-ruby_core_source-3.2.0/lib/debase/ruby_core_source/ruby-3.2.0-p0/vm_insnhelper.h:253:76: note: expected 'const struct rb_callcache *' but argument is of type 'const struct rb_callcache *'
+  253 | vm_call_cacheable(const struct rb_callinfo *ci, const struct rb_callcache *cc)
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <vm_insnhelper.h>
+/* end */
+
+--------------------
+
