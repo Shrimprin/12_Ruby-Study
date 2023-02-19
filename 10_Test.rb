@@ -1,85 +1,83 @@
-# # # def greeting
+# # # # def greeting
     
-# # #     puts 'Good Morning'    
-# # #     if block_given?
-# # #         yield
-# # #     end
-# # #     puts 'Good Night'
-# # # end
+# # # #     puts 'Good Morning'    
+# # # #     if block_given?
+# # # #         yield
+# # # #     end
+# # # #     puts 'Good Night'
+# # # # end
 
-# # # begin
-# # #     greeting
-# # # rescue => e
-# # #     puts e.message
+# # # # begin
+# # # #     greeting
+# # # # rescue => e
+# # # #     puts e.message
 
-# # # end
+# # # # end
 
-# # # greeting do 
-# # #     puts 'Hello'
-# # # end
+# # # # greeting do 
+# # # #     puts 'Hello'
+# # # # end
 
-# # # def greetings
-# # #     text = yield 'Hello~'
+# # # # def greetings
+# # # #     text = yield 'Hello~'
+# # # #     puts text
+# # # # end
+
+# # # # greetings do |text|
+# # # #     text *3
+# # # # end
+
+# # # def greeting(&block)
+# # #     puts 'goodmorning'
+
+# # #     text = block.call('hello')
 # # #     puts text
+# # #     puts 'goodnight'
 # # # end
 
-# # # greetings do |text|
-# # #     text *3
+# # # greeting do |text|
+# # #     text + text
 # # # end
 
-# # def greeting(&block)
-# #     puts 'goodmorning'
-
-# #     text = block.call('hello')
+# # def greeting(arrange_proc)
+# #     puts arrange_proc.arity
+# #     puts arrange_proc.class
+# #     puts 'Good Morning'
+# #     text = arrange_proc.call("Hello")
 # #     puts text
-# #     puts 'goodnight'
+# #     puts 'Good Morning'
 # # end
 
-# # greeting do |text|
-# #     text + text
-# # end
+# # repeat_proc = Proc.new{|text| text*2}
+# # greeting(repeat_proc)
 
-# def greeting(arrange_proc)
-#     puts arrange_proc.arity
-#     puts arrange_proc.class
-#     puts 'Good Morning'
-#     text = arrange_proc.call("Hello")
-#     puts text
-#     puts 'Good Morning'
+# # puts repeat_proc.call('ocho')
+# # add_lamda = ->(a,b){a+b}
+# # puts add_lamda.call(1,2)
+
+# def summ(num)
+#     num + 1
+#     puts num + 1
 # end
 
-# repeat_proc = Proc.new{|text| text*2}
-# greeting(repeat_proc)
-
-# puts repeat_proc.call('ocho')
-# add_lamda = ->(a,b){a+b}
-# puts add_lamda.call(1,2)
-
-def summ(num)
-    num + 1
-    puts num + 1
-end
-
-def judge(age)
-    adult = Proc.new{|n| n > 20}
-    child = Proc.new{|n| n < 20}
+# def judge(age)
+#     adult = Proc.new{|n| n > 20}
+#     child = Proc.new{|n| n < 20}
     
-    case age
+#     case age
 
-    when adult
-        'BigMan'
-    when child
-        'SmallMan'
+#     when adult
+#         'BigMan'
+#     when child
+#         'SmallMan'
 
-    else
-        'other'
-    end
-end
+#     else
+#         'other'
+#     end
+# end
 
-puts judge(21)
+# puts judge(21)
 
-reverse_proc = Proc.new{|s| s.reverse}
-p ['ruby','java','c++'].map(&reverse_proc)
-
-puts "testdayooooo"
+# reverse_proc = Proc.new{|s| s.reverse}
+# p ['ruby','java','c++'].map(&reverse_proc)
 

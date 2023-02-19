@@ -2,6 +2,8 @@ require 'minitest/autorun'
 require './lib/word_synth'
 require './lib/effects'
 
+require 'logger'
+logger = Logger.new('logger.log')
 class WordSynthTest < Minitest::Test
     def test_play
         
